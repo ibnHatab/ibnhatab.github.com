@@ -7,10 +7,15 @@
 #+AUTHOR: ibnHatab <lib.aca55a@gmail.com>
 
 * Active projects
-  + [[http://ibnhatab.github.com/femto-henb/][Femto HeNB Simulator]]: A femtocell simulator that performs 
-  many of the function of a Node B, but is optimized for deployment in the home.
-    + [[https://github.com/ibnHatab][github page]]
-    + [[https://github.com/ibnHatab/femto-henb/wiki][Femto HeNB Platform Wiki]]
++ [[http://ibnhatab.github.com/femto-henb/][Femto HeNB Simulator]]: A femtocell simulator that performs
+  many of the function of a Node B, but is optimized 
+  for deployment in the home.
 
++ [[http://ibnhatab.github.com/femto-cpe/][Femto Access Point (Customer Premises Equipment)]]: A Femto Access
+  Point (FAP), or “Femtocell” is a small-scale cellular base station,
+  typically designed for use in a home or small business. FAPs will be
+  remotely managed from mobile network operators using
+  TR-069/CWMP. 'femto-cpe implements CWMP agent, configuration
+  database and FAP OAM entity.
 
 * Helper projects
