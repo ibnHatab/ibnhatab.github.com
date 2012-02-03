@@ -1,7 +1,0 @@
-#+STARTUP: showall
-#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
-#+STARTUP: hidestars
-#+TITLE: ~ ibnHatab Home page
-#+AUTHOR: ibnHatab <lib.aca55a@gmail.com>
-
-* this page is write only 

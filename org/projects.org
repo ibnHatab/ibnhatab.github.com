@@ -1,0 +1,16 @@
+#+STARTUP: showall hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: index.html
+
+#+TITLE: ~ project page
+#+AUTHOR: ibnHatab <lib.aca55a@gmail.com>
+
+* Active projects
+  + [[http://ibnhatab.github.com/femto-henb/][Femto HeNB Simulator]]: A femtocell simulator that performs 
+  many of the function of a Node B, but is optimized for deployment in the home.
+    + [[https://github.com/ibnHatab][github page]]
+    + [[https://github.com/ibnHatab/femto-henb/wiki][Femto HeNB Platform Wiki]]
+
+
+* Helper projects
