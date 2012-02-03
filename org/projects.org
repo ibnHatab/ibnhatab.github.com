@@ -4,7 +4,7 @@
 #+LINK_HOME: index.html
 
 #+TITLE: ~ project page
-#+AUTHOR: ibnHatab <lib.aca55a@gmail.com>
+#+AUTHOR: }{oTa@b)4 <lib.aca55a@gmail.com>
 
 * Active projects
 + [[http://ibnhatab.github.com/femto-henb/][Femto HeNB Simulator]]: A femtocell simulator that performs
@@ -19,3 +19,16 @@
   database and FAP OAM entity.
 
 * Helper projects
++ [[https://github.com/ibnHatab/env_togo][development environment]]: 
+  bin/ 
+  apps/ 
+  .bash* 
+  .emacs 
+  .erlang 
+  .etc
+
++ [[https://github.com/ibnHatab/femto-test][Test tools collection]]: 
+  eunit_tools - erlang shell adds, FSM test
+  eunit_viz - FSM visualization
+
+  
