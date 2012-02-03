@@ -4,7 +4,7 @@
 #+LINK_HOME: index.html
 #+OPTIONS: toc:nil
 #+STYLE: <link rel="stylesheet" type="text/css" href="./css/style.css" />
-#+TITLE: ~ project page
+#+TITLE: ~ home page
 #+AUTHOR: ibnHatab <lib.aca55a@gmail.com>
 
 
