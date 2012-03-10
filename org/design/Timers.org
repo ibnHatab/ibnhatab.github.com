@@ -1,0 +1,25 @@
+#+STARTUP: showall hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: /sitemap.html
+#+LINK_HOME: /index.html
+#+OPTIONS: toc:nil
+#+STYLE: <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+
+* Timeout
+  Used in networking code. Designed to signal when setain event does not 
+  happen in predefined window of time.
+
+  : see src/testing/timerTest.c
+
+* TTI Timeout
+  Used by MAC/RLC code. Time tick is driven by TTI triger from PHY. 
+  Timer design is simplified version of linux timers. It reuses timer_list struct
+  and most of initialization code. 
+
+
+
+* Timers
+  Actual timers which expectet to run with a specified latency and sequence.
+
+  : see ktime_t

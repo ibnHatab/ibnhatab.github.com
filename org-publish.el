@@ -15,9 +15,9 @@
 	 :style "<link rel=\"stylesheet\" href=\"css/style.css\" type=\"text/css\"/>"
 	 :org-export-html-style "<link rel=\"stylesheet\" href=\"css/style.css\" type=\"text/css\"/>"
 
-	 :auto-sitemap    t
-	 :sitemap-filename "sitemap.org"
-	 :sitemap-title    "Sitemap"
+	 ;; :auto-sitemap    t
+	 ;; :sitemap-filename "sitemap.org"
+	 ;; :sitemap-title    "Sitemap"
 
 	 :html-preamble t)
 

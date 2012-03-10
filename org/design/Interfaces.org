@@ -1,0 +1,166 @@
+#+STARTUP: showall hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: /sitemap.html
+#+LINK_HOME: /index.html
+#-OPTIONS: toc:nil
+#+STYLE: <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+
+
+* eNodeB Modem Interfaces
+  The figure below shows the relationship between the blocks and the
+  SAPs defined in our implementation of the eNodeB Redio Part.
+  #+CAPTION: eNB Redio Part Interfaces
+  #+ATTR_HTML: alt="image" title="eNB Redio Part" align="right" border="1"
+  [[./interfaces.png]]
+  
+  Each of these blocks provide/require one part of the interface.
+  Notation on the diagram extended with circles iner to the component
+  which represents interface user device.
+
+** Control interfaces
+   - cmac-sap      /MAC configuration/
+   - cpdcp-sap     /PDCP configuration/
+   - ff-csched-sap /FFAPI SCHED configuration/
+
+** Data interfaces
+   - mac-sap       /MAC 3gpp/
+   - ff-sched-sap  /FFAPI SCHED/
+   - rlc-d-sap     /RLC 3gpp with PDCP/
+   - rlc-s-sap     /RLC ??? with RRC for Msg1-Msg4/
+   - ff-phy-sap    /FFAPI PHY intraface/
+
+** User devices
+   - /dev/cmak-sap-user       /MAC driver for user space/
+   - /dev/cpdcp-sap-user      /PDCP driver for user space/
+   - /dev/rlc-s-sap           /RLC driver for RRC/
+   - /dev/ff-csched-sap-user  /CSCHED driver in user space/
+   - /dev/ff-sched-sap-user   /SCHED driver in user space/
+
+* MAC & Scheduler 
+** Description
+   Implements IB speceific version of SmallCells forum MAC Scheduler
+   Interface, see: [[http://www.smallcellforum.org/resources-technical-papers][FFAPI]].  FAPI presents logical specification and
+   this concrete implementation translate each primitive to 'C' style
+   interface with taged descriminator for primitives and /struct/ for
+   data.  
+
+  #+CAPTION: MAC Interfaces
+  #+ATTR_HTML: alt="image" title="MAC" align="center"
+  [[./mac.png]]
+
+** Scheduler
+   The primitives in [[http://www.smallcellforum.org/resources-technical-papers][FFAPI]] are grouped in two groups: the CSCHED
+   primitives, which deal with scheduler configuration, and the SCHED
+   primitives, which deal with the execution of the scheduler.
+   
+   Furthermore, [[http://www.smallcellforum.org/resources-technical-papers][FFAPI]] defines primitives of two different kinds:
+   those of type REQ go from the MAC to the Scheduler, and those of
+   type IND/CNF go from the scheduler to the MAC.
+
+   To translate these characteristics into C, we define the following
+   abstract intefaces that implement Service Access Points (SAPs) to be
+   used to issue the primitives:
+   
+   - /ff-shed-sap/  that correspond to SCHED primitives of type REQ and of type CNF/IND;
+   - /ff-cshed-sap/ that correspond to CSCHED primitives of type REQ and of type CNF/IND;
+
+   There are 3 components involved in the MAC Scheduler interface:
+   Control component, Subframe multiplexer and de-multiplexer
+   component and Scheduler component. 
+
+** MAC
+   The User side of both the CSCHED SAP and the SCHED SAP are
+   implemented within the eNB MAC.The eNB MAC can be used with
+   different scheduler implementations without modifications.
+   
+   Modem provide to it's user two interfaces:
+
+   - /cmac-sap/ interface for connection control. Used to configure
+     varios entities like Cell, UE, LC and also parameters for the
+     scheduler.
+   - /mac-sap/ provided by MAC for data transfer.
+
+
+   The following list specifies which service primitives are provided
+   by the MAC service interfaces:
+
+   : mac_sap_provider:transmit_pdu
+
+   The RLC entity uses this primitive to send a RLC PDU to the lower
+   MAC entity in the transmitter peer
+
+   : mac_sap_provider:report_buffer_status
+
+   The RLC entity uses this primitive to report the MAC entity the
+   size of pending buffers in the transmitter peer
+
+   : mac_sap_user:notify_tx_opportunity
+
+   The MAC entity uses this primitive to nofify the RLC entity a
+   transmission opportunity
+
+   : mac_sap_user:receive_pdu
+
+   The MAC entity uses this primitive to send an RLC PDU to the upper
+   RLC entity in the receiver peer
+
+** PHY
+   Modem require [[http://www.smallcellforum.org/resources-technical-papers][FFAPI]] style PHY interface. 
+
+* RLC 
+  The RLC entity is specified in the 3GPP technical specification TS
+  36322, and comprises three different types of RLC:
+
+   - Transparent Mode (TM),
+   - Unacknowledge Mode (UM) and
+   - Acknowledged Mode (AM).
+
+  #+CAPTION: RLC Interfaces
+  #+ATTR_HTML: alt="image" title="RLC" align="center"
+  [[./rlc.png]] 
+
+  The RLC entities provide the RLC service interface to the upper PDCP
+  layer and the MAC service interface to the lower MAC layer. The RLC
+  entities use the PDCP service interface from the upper PDCP layer and
+  the MAC service interface from the lower MAC layer.
+
+  The following list specifies which service primitives are provided
+  by the RLC service interfaces:
+
+  : rlc_sap_provider:transmit_pdcp_pdu
+
+  The PDCP entity uses this primitive to send a PDCP PDU to the lower
+  RLC entity in the transmitter peer 
+
+  : rlc_sap_user:receive_pdcp_pdu
+
+  The RLC entity uses this primitive to send a PDCP PDU to the upper
+  PDCP entity in the receiver peer
+
+
+* PDCP 
+  The PDCP service interface is divided into two parts:
+   
+  : pdcp_sap_provider 
+  /part is provided by the PDCP layer and used by the upper layer/
+  : pdcp_sap_user 
+  /part is provided by the upper layer and used by the PDCP layer/
+
+  #+CAPTION: PDCP Interfaces
+  #+ATTR_HTML: alt="image" title="PDCP" align="center"
+  [[./pdcp.png]]
+
+  The following list specifies which service primitives are provided
+  by the PDCP service interfaces:
+
+  : pdcp_sap_provider:transmit_rrc_pdu 
+
+  The RRC entity uses this primitive to send an RRC PDU to the lower
+  PDCP entity in the transmitter peer
+
+  : pdcp_sap_user:receive_rrc_pdu
+
+  The PDCP entity uses this primitive to send an RRC PDU to the upper
+  RRC entity in the receiver peer
+
