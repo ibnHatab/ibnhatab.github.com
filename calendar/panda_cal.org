@@ -1,0 +1,45 @@
+
+#+TITLE: Panda size servers
+#+CATEGORY: panda
+
+* p2p server
+** DONE Install XMPP server
+   CLOSED: [2013-09-28 Sat 20:02] DEADLINE: <2013-10-02 Wed>
+   http://localhost:5280/admin/server/localhost/users/
+   axadmin:Omc3
+
+
+* tr-069
+** TR-069 cpe provisioning <2013-08-09 Fri>
+   http://djuro82.blogspot.ro/2011/05/tr-069-cpe-provisioning.html
+
+** Converting Relational Database into XML Documents with DOM
+   http://www.cs.cityu.edu.hk/~jfong/homepage/reference/Converting.pdf
+** HTTP loop test for CWMP stack                                       :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 08:12]--[2013-08-05 Mon 08:12] =>  0:00
+[2013-08-05 Mon 08:12]
+http://djuro82.blogspot.ro/2011/05/tr-069-cpe-provisioning.html
+
+
+* hdm     
+** TODO HDM server
+*** Reconfigure HDM
+*** Recover HDM client
+
+
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}

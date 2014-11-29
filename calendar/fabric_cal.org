@@ -1,0 +1,334 @@
+
+#+TITLE: Fabric Of Languages 
+#+CATEGORY: fabric
+
+* snort
+  http://www.snort.org/
+  Snort FAQ/Wiki:https://github.com/vrtadmin/snort-faq/blob/master/README.md
+  http://s3.amazonaws.com/snort-org/www/assets/166/snort_manual.pdf
+
+* elixir
+** Elixir language review sourse base [2013-10-26 Sat]
+   review sourse base https://gist.github.com/sasa1977
+** Flussonic config grammar                                            :DOCS:
+   https://gist.github.com/maxlapshin/5891500
+** Concepts, Techniques, and Models of Computer Programming
+
+* erlang
+** Erlang Community - Building a Non-blocking TCP server using OTP principles - Trapexit :DOCS:
+   http://www.trapexit.org/Building_a_Non-blocking_TCP_server_using_OTP_principles
+** Spawnfest 2012 | Winners                                            :DOCS:
+   http://spawnfest.com/winners/
+** maxim: Continuous Integration сервер на Эрланг за 30 минут          :DOCS:
+   http://maxim.livejournal.com/413892.html
+
+** 5HT/et erlang with types                                            :DOCS:
+   https://github.com/5HT/et
+** August Erlang news and updates from Erlang Solutions.               :DOCS:
+   http://www2.erlang-solutions.com/webmail/23452/38383323/f802ae9362835e391679b6f6ca6bf33c
+
+** Riak NoSQL database - For scalability, distribution and fault tolerance :DOCS:
+  [2013-09-19 Thu 10:28]
+  https://www.erlang-solutions.com/resources/webinars/riak-nosql-database-scalability-distribution-and-fault-tolerance
+** WAITING Little RIAK book [1/5]                                      :DOCS:
+   - State "WAITING"    from "NEXT"       [2014-08-11 Mon 11:08]
+    https://github.com/coderoshi/little_riak_book/tree/master/rendered/
+    - [X] 1 Introduction
+    - [ ] 2 Concepts
+    - [ ] 3 Developers
+    - [ ] 4 Operators
+    - [ ] 5 Notes
+
+** NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence [3/16]
+   http://search.safaribooksonline.com/book/databases/9780133036138
+   - [X] Preface
+   - [X] Chapter 1. Why NoSQL?
+   - [X] Chapter 2. Aggregate Data Models
+   - [ ] Chapter 3. More Details on Data Models
+   - [ ] Chapter 4. Distribution Models
+   - [ ] Chapter 5. Consistency
+   - [ ] Chapter 6. Version Stamps
+   - [ ] Chapter 7. Map-Reduce
+   - [ ] Chapter 8. Key-Value Databases
+   - [ ] Chapter 9. Document Databases
+   - [ ] Chapter 10. Column-Family Stores
+   - [ ] Chapter 11. Graph Databases
+   - [ ] Chapter 12. Schema Migrations
+   - [ ] Chapter 13. Polyglot Persistence
+   - [ ] Chapter 14. Beyond NoSQL
+   - [ ] Chapter 15. Choosing Your Database
+ 
+** Data convertion from network to relational database
+    http://www.sitepoint.com/hierarchical-data-database-2/
+    http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+
+* ats
+** Observaple FWK
+*** Discrete event modeling on streams
+*** LTE scheduler on descrete events
+*** Temporal logic for resource allocation
+
+* scala
+** Go trough Udacity: Design of Computer Programs [3/7]
+
+   https://www.udacity.com/course/viewer#!/c-cs212/l-48688918/m-48311715
+   Peter Norvig   
+    - [X] Lesson 1: Winning Poker Hands
+    - [X] Lesson 2: Back of the Envelope
+    - [X] Lesson 3: Regular Expressions, other languages and interpreters
+    - [ ] Lesson 4: Dealing with complexity through search
+    - [ ] Lesson 5: Dealing with uncertainty through probability
+    - [ ] Lesson 6: Word Games
+    - [ ] Lesson 7: Conclusion
+
+** Got to Udacity: Introduction to Artificial Intelligence             :DOCS:
+   https://www.udacity.com/course/viewer#!/c-cs271/l-48688925/m-48680759
+
+** Twitter Scala School! 
+   http://twitter.github.io/scala_school/
+
+** Scala in Depth [4/11]                                               :DOCS:
+   http://my.safaribooksonline.com/book/programming/scala/9781935182702
+    - [X] Chapter 1. Scala—a blended language
+    - [X] Chapter 2. The core rules
+    - [X] Chapter 3. Modicum of style—coding conventions
+    - [X] Chapter 4. Utilizing object orientation
+    - [ ] Chapter 5. Using implicits to write expressive code
+    - [ ] Chapter 6. The Type System
+    - [ ] Chapter 7. Using implicits and types together
+    - [ ] Chapter 8. Using the right collection
+    - [ ] Chapter 9. Actors
+    - [ ] Chapter 10. Integrating Scala with Java
+    - [ ] Chapter 11. Patterns in functional programming
+
+** Go trough Cursera: Discrete Optimization [0/7]
+   https://class.coursera.org/optimization-001
+    - [ ] Mail Bags
+    - [ ] Preliminaries
+    - [ ] Constraint Programming
+    - [ ] Local Search
+    - [ ] Linear & Integer Programming
+    - [ ] Advanced
+    - [ ] Assignments
+
+** Helm, a functionally reactive game engine                           :DOCS:
+   http://helm-engine.org/
+
+** Functional Data Structure Resources                                 :DOCS:
+   https://github.com/djspiewak/extreme-cleverness
+   http://helenaedelson.com/?p=942 
+   By request, and not exactly the ‘short list’, here are some excellent resources on functional data structures: note that some cost $ but you can view them for 24 hours for a few USD:
+
+    - [ ] Start with this, a truly an excellent overview which I saw in person at StrangeLoop 2011: http://www.infoq.com/presentations/Functional-Data-Structures-in-Scala by @djspiewak
+    - [ ] http://www.amazon.com/Purely-Functional-Structures-Chris-Okasaki/dp/0521663504 by Chris Okasaki
+    - [ ] Fast Mergeable Integer Maps, Okasaki and Gill
+    - [ ] http://web.engr.oregonstate.edu/~erwig/diet/ by @seanparsons
+    - [ ] Ralf Hinze , Ross Paterson, Finger trees: a simple general-purpose data structure, Journal of Functional Programming, v.16 n.2, p.197-217, March 2006
+    - [ ] Stefan Kahrs, Red-black trees with types, Journal of Functional Programming, v.11 n.4, p.425-432, July 2001
+    - [ ] Optimal purely functional priority queues, Journal of Functional Programming, 1996, Chris Okasaki
+    - [ ] Chris Okasaki, From fast exponentiation to square matrices: an adventure in types, ACM SIGPLAN Notices, v.34 n.9, p.28-35, Sept. 1999
+    - [ ] Matti Nykänen, An incremental algorithm for DLO quantifier elimination via constraint propagation, Artificial Intelligence, v.160 n.1, p.173-190, December 2004
+    - [ ] Erik D. Demaine , Stefan Langerman , Eric Price, Confluently Persistent Tries for Efficient Version Control, Proceedings of the 11th Scandinavian workshop on Algorithm Theory, July 02-04, 2008, Gothenburg, Sweden
+    - [ ] Koen Claessen , Nicholas Smallbone , John Hughes, QuickSpec: guessing formal specifications using testing, Proceedings of the 4th international conference on Tests and proofs, July 01-02, 2010, Málaga, Spain
+    - [ ] Olaf Chitil , Frank Huch, Monadic, prompt lazy assertions in Haskell, Proceedings of the 5th Asian conference on Programming languages and systems, November 29-December 01, 2007, Singapore
+    - [ ] Ralf Hinze, Purely functional 1-2 brother trees, Journal of Functional Programming, v.19 n.6, p.633-644, November 2009
+    - [ ] Sylvain Conchon , Jean-Christophe Filliâtre, A persistent union-find data structure, Proceedings of the 2007 workshop on Workshop on ML, October 05-05, 2007, Freiburg, Germany
+    - [ ] Graeme E. Moss , Colin Runciman, Inductive benchmarking for purely functional data structures, Journal of Functional Programming, v.11 n.5, p.525-556, September 2001
+    - [ ] Haim Kaplan , Robert E. Tarjan, Purely functional, real-time deques with catenation, Journal of the ACM (JACM), v.46 n.5, p.577-603, Sept. 1999
+    - [ ] Hugo Simões , Pedro Vasconcelos , Mário Florido , Steffen Jost , Kevin Hammond, Automatic amortised analysis of dynamic memory allocation for lazy functional programs, ACM SIGPLAN Notices, v.47 n.9, September 2012
+
+   These are good too but not directly related:
+    - [ ] Martin Erwig, Inductive graphs and functional graph algorithms, Journal of Functional Programming, v.11 n.5, p.467-492, September 2001
+    - [ ] Stefan Edelkamp , Peter Leven, Directed Automated Theorem Proving, Proceedings of the 9th International Conference on Logic for Programming, Artificial Intelligence, and Reasoning, p.145-159, October 14-18, 2002
+
+  [2013-11-07 Thu 15:13]
+  Functional Data Structure Resources
+** Scalaz State Monad
+  http://www.youtube.com/watch?v=Jg3Uv_YWJqI
+  [[file:/local/vlad/repos/ReactiveProgramming/nodescala/src/main/scala/nodescala/package.scala::}]]
+* ddd
+* DCI
+  http://www.artima.com/articles/dci_vision.html
+  - The data, that live in the domain objects that are rooted in
+    domain classes;
+  - The context that brings live objects into their positions in a
+    scenario, on demand;
+  - The interactions, that describe end-user algorithms in terms of
+    the roles, both of which can be found in end users' heads.
+  http://www.leansoftwarearchitecture.com/
+
+* dsl
+** Comparative reading on DSL    
+*** Books/[Debasish_Ghosh]_DSLs_in_Action(BookFi.org)_cropped.pdf  [0/3]
+    : /local/vlad/Documents/Books/\[Debasish_Ghosh\]_DSLs_in_Action\(BookFi.org\)_cropped.pdf 
+    - [ ] 6 Internal DSL design in Scala 166 
+    - [ ] 8 Designing external DSLs using Scala parser combinators 241
+    - [ ] 9 DSL design: looking forward 277
+
+*** Domain-Specific Languages - M. Fowler (Addison-Wesley, 2010) BBS.pdf [1/8]
+    : /local/vlad/Documents/Books/\[Martin_Fowler\]_Domain-Specific_Languages_\(Addison\(BookFi.org\)_cropped.pdf
+    - [X] Chapter 4: Implementing an Internal DSL <2013-08-12 Mon>      :DOCS:
+    - [ ] Chapter 5: Implementing an External DSL
+    - [ ] Chapter 6: Choosing between Internal and External DSLs
+    - [ ] Chapter 7: Alternative Computational Models
+    - [ ] Chapter 8: Code Generation
+    - [ ] Chapter 9: Language Workbenches
+    - [ ] Chapter 10: A Zoo of DSLs    (Part II: Common Topics 145)
+    - [ ] Chapter 11: Semantic Model
+
+* mathematics
+** Linear algebra 
+** Functional algebra / Bird
+** Bayesian Methods for Hackers                                        :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 17:12]--[2013-08-05 Mon 17:12] =>  0:00
+[2013-08-05 Mon 17:12]
+http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
+** Essential Math for Games Programmers                                :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 17:13]--[2013-08-05 Mon 17:13] =>  0:00
+[2013-08-05 Mon 17:13]
+http://www.essentialmath.com/tutorial.htm
+** ho.history overview - Video lectures of mathematics courses available online for free - MathOverflow :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 17:13]--[2013-08-05 Mon 17:13] =>  0:00
+[2013-08-05 Mon 17:13]
+http://mathoverflow.net/questions/54430/video-lectures-of-mathematics-courses-available-online-for-free
+** Short algorithm, long-range consequences - MIT News Office          :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 17:17]--[2013-08-05 Mon 17:17] =>  0:00
+[2013-08-05 Mon 17:17]
+http://web.mit.edu/newsoffice/2013/short-algorithm-long-range-consequences-0301.html
+* Cryptography I
+** Introduction (week 1)
+*** Descrete probability    
+    P(E') = 1 - P(E)
+    B ~ Ber(p)
+    C ~ Ber(0.65) => P(C=1) = 0.65
+    P(B=k) = (n|k) p^k (1 - p)^(n-k)
+    (n|k) = n! / (k! (n-k)!)
+
+    U={0,1}^n: univers P: U -> [0,1]; sum(P(x)) = 1; {0,1}^2 = {00, 01, 10, 11}
+    uniform distribution: x E U: P(x)=1/|U|
+    point distribution: P(x0)=1; Vx != x0: P(x) = 0
+    distribution vector len |U|^n
+
+    union: Pr[A U B] <= Pr[A] + Pr[B]
+
+    XOR: Z = X (+) Y;
+    
+*** rigorouse proof 
+    - Preciselly specify threat model
+    - Propose a construction
+    - Prove that breaking construcion under threat model will solve an
+      underliying hard problem
+*** Alice to Bob
+    c = E(k,m); m = D(k, c) 
+*** History
+    DES # keys = 2^26, bs = 64 bits
+    AES # keys = 128
+    Salsa20
+*** Block cipher
+    (K, M, C), (E,D)
+    E: KxM->C, D: KxC->M
+    | D(K, E(K,M)) == M | polinomial time |
+**** One time pad (OTP) (Vernom 1917)
+     M = C = {0,1}^n
+     K = {0,1}^n
+     c = E(k,m) = k (+) m
+     m = D(k, c) = k (+) c
+     : k = m (+) c
+     - security of cypher and perfect secrecy (Shenon)
+       V m0, m1 from M, and V c from C
+       Pr[E(k, m0) = c] == Pr[E(k, m1) = c], k <-R- K
+       learn nothing about PT from CT
+*** PRG
+    G: {0,1}^s -> {0,1}^n, n >> s
+    k - random seed
+    c = m (+) G(k)
+    m = c (+) G(k)
+    - predictable if
+      Pr[A(G(k))|1,..i = G(k)|i+1] > 1/2 + eps, eps > 1/2^30
+**** Goal: [k<-K, output G(k)] ~~ [r <-R- {0,1}^n, out r]
+     Statistical test: A(x) = [0, 1] rendom/not-random, 
+     - |#0(x) - #1(x)| < 10 sqrt(n)
+     - |#00(x) - n/4| < 10 sqrt(n)
+     - max-run-0(x) < 10 log(n)
+     -
+**** Advantage
+     Adv-prg[A, G] = Pr[A(G(k)) = 1] - Pr[A(r)=1] 
+     : A(x) = 0 => Adv = 0
+*** Two time pad
+    - WEP, RC4
+*** OTP is malleable
+
+** Stream Ciphers (week 1)
+
+*** DONE install  jedi:setup
+    CLOSED: [2014-03-03 Mon 09:56]
+
+*** Semantic security
+    1. Chal. Pick a random key
+    2. 
+
+
+* projects
+** Common Test framework (CT)
+*** SSH wrapper
+*** Telnet wrapper
+** Aeroflex language 
+*** Parse AFX language and documentation
+
+** Github repositories related tasks
+   All Repositories
+*** SmallCell/exdsl_netconf
+*** SmallCell/exdsl_fabric
+*** SmallCell/exdsl_make
+*** SmallCell/exdsl_shell
+
+** Samba / Yamba
+*** DONE [[file:~/public_html/ib-home/projects/Yamba/Yamba.org][Yamba/Samba project org file]]    
+    CLOSED: [2014-03-03 Mon 09:57]
+*** [[file:~/public_html/ib-home/projects/Yamba/Yamba.org::*-%20Smack%20client%20library][Smack client library]]
+    Connection.DEBUG_ENABLED = true;
+    http://www.igniterealtime.org/builds/smack/docs/latest/documentation/debugging.html
+**** DONE Implement subscribe mechanism in Xmppservice
+     CLOSED: [2013-10-23 Wed 16:00]
+     http://xmpp.org/extensions/xep-0060.html
+    
+     [[file:/local/vlad/repos/android/samba/xmpp-client/src/main/scala/ro/cipex/samba/XmppService.scala::case%20Event(Subscribe(nodeName),%20data%20@%20StateData(xmpp))%20%3D>][file:/local/vlad/repos/android/samba/xmpp-client/src/main/scala/ro/cipex/samba/XmppService.scala::case Event(Subscribe(nodeName), data @ StateData(xmpp)) =>]]
+
+**** DONE Check AKKA on android
+     CLOSED: [2014-03-03 Mon 09:57]
+
+**** DONE Implement XmppService client as stateles controller
+     CLOSED: [2014-03-03 Mon 09:57]
+    
+    [[file:/local/vlad/repos/android/samba/xmpp-client/src/test/scala/ro/cipex/samba/XmppServiceSpec.scala::"Xmmp%20service"%20should%20{][file:/local/vlad/repos/android/samba/xmpp-client/src/test/scala/ro/cipex/samba/XmppServiceSpec.scala::"Xmmp service" should {]]
+**** DONE move to asmack 
+     CLOSED: [2013-10-15 Tue 15:47] DEADLINE: <2013-10-02 Wed>
+*** DONE move to asmack 
+   CLOSED: [2013-10-23 Wed 16:04]
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+**********************************************************************
+To unsubscribe: <mailto:icebreakers- [ ] wls- [ ] ro- [ ] unsubscribe- [ ] request@list.alcatel- [ ] lucent.com>
+
+ 
+ [[file:~/public_html/ib-home/projects/Yamba/Yamba.org::*-%20Smack%20client%20library][- Smack client library]]
+*** gtalksms
+    http://code.google.com/p/gtalksms/wiki/FeaturesAndCommands
+*** Suppervision hierarchy / testing method  
+   [[file:/local/vlad/repos/android/samba/xmpp-client/src/test/scala/ro/cipex/samba/XmppServiceSpec.scala]]
+
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars logdone
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />

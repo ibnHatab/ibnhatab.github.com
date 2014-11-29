@@ -1,0 +1,189 @@
+
+#+TITLE: Femto LTE Project Calendar
+#+CATEGORY: femto
+
+* lte
+** foundation
+*** DONE IQ / constalation / precoding                                 :DOCS:
+    CLOSED: [2013-10-23 Wed 16:01]
+*** Veterbi codecs - Qualcomm                                          :DOCS:   
+*** TODO 4G LTE/LTE-Advanced for Mobile Broadband [0/5]                :DOCS:
+    http://search.safaribooksonline.com/book/-/9780123854896
+    By: Erik Dahlman; Stefan Parkvall; Johan Skold
+
+    - [ ] CHAPTER 10 Downlink Physical-Layer Processing
+    - [ ] CHAPTER 11 Uplink Physical-Layer Processing
+    - [ ] CHAPTER 12 Retransmission Protocols
+    - [ ] CHAPTER 13 Power Control, Scheduling, and Interference Handling
+    - [ ] CHAPTER 14 Access Procedures
+     
+** femto
+*** TODO DT for TR-196 [0/4]
+    - [ ] Understand DM/DT based on tr-154
+      http://www.broadband-forum.org/technical/download/TR-154.pdf
+      There are diference in:
+      - Root Object definition
+      - Root Object Augment
+      - Service Data Model - isService=true
+      - Amended Service Data Model
+
+    - [ ] Generate femto DT
+    - [ ] Make pluging for containment and hierarchy on femto DT
+    - [ ] make plugin and Generate Elixir structs
+    - [ ] use PlantUML and embed Entities/Values into DDD document
+      
+      
+*** MULTIMODE SMALL CELL SOLUTIONS                                     :NOTE:
+    CLOCK: [2013-08-04 Sun 08:59]--[2013-08-04 Sun 09:00] =>  0:01
+    [2013-08-04 Sun 08:59]
+    FSM9900 – 4G + 3G Platform
+    http://www.qca.qualcomm.com/networking/technology.php?nav1=176
+    
+    BLOG: http://www.qualcomm.com/media/blog/contributors/prakash-sangam 
+    
+    find [[google:PDCP][research]]
+    lte  [[lte:IQ][IQ]]
+   
+** modem
+*** TODO recover CL state [1/4] <2013-08-08 Thu>
+    - [X] revisit design
+    - [ ] retest CL dataflow
+    - [ ] find missing parts
+    - [ ] generate signal on radio
+    
+    [[file:~/public_html/ib-home/projects/femto/femto_proj.org::*LTE%20L2%20Stack][LTE L2 Stack]]
+
+*** T4K, T33xx, Qualcomm, P2040
+
+*** Understanding Linux Network Internals [0/8]
+    - [ ] 2. Critical Data Structures [0/2]
+      - [ ] setup kernel / qemu / gdb / utest
+      - [ ] Initialize structure
+    - [ ] 3. User-Space-to-Kernel Interface [0/2]
+      - [ ] test loop
+      - [ ] tun/tap device
+    - [ ] II. System Initialization / 4. Notification Chains [0/1] 
+      - [ ] protocols
+    - [ ] 5. Network Device Initialization [0/1]
+      - [ ] Dummy driver
+    - [ ] 7. Kernel Infrastructure for Component Initialization
+    - [ ] 10. Frame Reception [0/2]
+      - [ ] NAPI
+      - [ ] datastructures
+    - [ ] 13. Protocol Handlers [0/1]
+      - [ ] famto stack skeleton
+    - [ ] VI. Neighboring Subsystem / 26. Neighboring Subsystem: Concepts [0/2]
+      - [ ] PDCP
+      - [ ] GTP
+** core
+*** TODO SIGTRAN stack implementation
+    - GIT repos with erlang from http://cgit.osmocom.org/
+      Projects in Erlang programming language
+      | erlang/mgw_nat   | Erlang MGW NAT/MASQ implementation     Harald Welte    4 weeks summarylogtree                                 |
+      | erlang/osmo_map  | Erlang implementation of TCAP/MAP      Harald Welte    5 weeks summarylogtree                                 |
+      | erlang/osmo_sccp | Erlang implementation of SCCP (ITU-T Q.71x)    Harald Welte    3 months        summarylogtree                 |
+      | erlang/osmo_ss7  | Erlang implementation of M2UA/M3UA/MTP3/SCCP/ISUP codec + utils        Harald Welte    3 weeks summarylogtree |
+      | erlang/signerl   | Erlang SS7 TCAP/MAP implementation     Vance Shipley   3 months        summarylogtree                         |
+      | osmo-map-masq    | Old SS7/TCAP/MAP masquerading (deprecated)     Harald Welte    6 months        summarylogtree                 |
+    - Dialogic® DSI API wrapper
+      https://github.com/iamaleksey/dsi#readme
+      and API itself:
+      http://www.dialogic.com/en/products/signaling-and-ss7-components/download/dsi-interface-protocol-stacks.aspx
+
+* Search Results for: Information Resources Management Association
+** Networking and Telecommunications: Concepts, Methodologies, Tools and Applications
+   http://search.safaribooksonline.com/book/electrical-engineering/communications-engineering/9781605669861
+   Selected topics
+   - Section: I Fundamental Concepts and Theories [2/6]
+     - [X] Chapter 1.1. Critical Trends, Tools, and Issues in Telecommunications
+     - Chapter 1.2. Basics of Telecommunications Management
+       - [X] MAIN COMPONENTS OF TELECOMMUNICATIONS MANAGEMENT - DEFINITION OF TELECOMMUNICATIONS MANAGEMENT
+       - [X] TELECOMMUNICATIONS MANAGEMENT FUNCTIONS
+       - [X] MANAGED OBJECTS AND MANAGEMENT INFORMATION BASES
+     - Chapter 1.4. Interdisciplinarity in Telecommunications and Networking
+       - [X] INTERDISCIPLINARITY IN TELECOMMUNICATIONS AND NETWORKING
+     - Chapter 1.5. Measures of Network Structure
+       - [ ] PROPERTIES, TOPOLOGIES, AND MEASURES OF NETWORK STRUCTURE     
+     - [X] Chapter 1.6. Wireless Communications: Is the Future Playing Out as Predicted?
+     - [ ] Chapter 1.7. A Survey on Classical Teletraffic Models and Network Planning Issues for Cellular Telephony
+     - [ ] Chapter 1.8. Convergence of the Internet and Telecommunications
+     - [ ] Chapter 1.9. Converged Networks and Seamless Mobility: Lessons from Experience 
+     - ??? Chapter 1.12. Analysis of the Forces Reshaping the Mobile Internet Business
+     - [ ] Chapter 1.15. Data Mining in the Telecommunications Industry
+   - Section: II Development and Design Methodologies
+     - [ ] Chapter 2.1. Design and the Virtual Organization
+     - [ ] Chapter 2.3. Nature-Inspired Informatics for Telecommunication Network Design
+     - [ ] Chapter 2.4. A Framework for Semi-Autonomous Servers in the Wireless Network Environment
+     - [ ] Chapter 2.5. Data Dissemination and Query Routing in Mobile Peer-to-Peer Networks
+     - [ ] Chapter 2.6. Hybrid Trust Structure in Self-Organizing Networks
+     - [ ] Chapter 2.7. Formal Methods in Cross Layer Modeling and Optimization of Wireless Networks: State of the Art and Future Directions
+     - [ ] Chapter 2.9. Definition and Analysis of a Fixed Mobile Convergent Architecture for Enterprise VoIP Services
+     - [ ] Chapter 2.10. Cross-Layer Radio Resource Management Protocols for QoS Provisioning in Multimedia Wireless Networks
+     - [ ] Chapter 2.12. Open Infrastructure for a Nationwide Emergency Services Network
+   - Section: III Tools and Technologies
+     - [ ] Chapter 3.1. Mobility and Enterprise 2.0
+     - [ ] Chapter 3.2. Rembassy: Open Source Tool For Network Monitoring
+     - [ ] Chapter 3.8. A Wireless Mesh Network Platform for Vehicle Positioning and Location Tracking
+     - [ ] Chapter 3.9. Conducting Forensic Investigations of Cyber Attacks on Automobile In-Vehicle Networks
+     - [ ] Chapter 3.10. Online Remote Control of a Wireless Home Automation Network
+     - [ ] Chapter 3.11. Adaptive Codec Selection for VoIP in Multi-Rate WLANs
+     - [ ] Chapter 3.12. QoS Provisioning Framework in IP-Based VPN
+     - [ ] Chapter 3.13. Compact Array Antenna: Omni-, Sector, and Adaptive Modes of Compact Array Antenna
+   - Section: IV Utilization and Application
+     - [ ] Chapter 4.4. A European Virtual Enterprise on Collaborative Data Mining and Decision Support
+     - [ ] Chapter 4.9. Role of Telecommunications in Precision Agriculture
+   - Section: V Organizational and Social Implications
+     - [ ] Chapter 5.1. Digital Disempowerment in a Network Society
+     - [ ] Chapter 5.2. Localization, Culture, and Global Communication
+     - [ ] Chapter 5.3. Evaluating Organisational Readiness for Virtual Collaboration
+   - Section: VII Critical Issues
+     - [ ] Chapter 7.1. A Strategy for Enterprise VoIP Security
+     - [ ] Chapter 7.2. Access Security in UMTS and IMS
+     - [ ] Chapter 7.3. Applied Cryptography for Security and Privacy in Wireless Sensor Networks
+     - [ ] Chapter 7.6. Vehicular Networks Security: Attacks, Requirements, Challenges and Current Contributions
+     - [ ] Chapter 7.7. On Peer-to-Peer Location Management in Vehicular Ad Hoc Networks
+     - [ ] Chapter 7.8. Evaluating QoS in a Multi-Access Wireless Network
+     - [ ] Chapter 7.9. A Concept for Mobile Ad-Hoc Messaging Networks (AMNet)
+     - [*] Chapter 7.17. Game Theory for PHY Layer and MAC Sublayer in Wireless Telecommunications
+     - [ ] Chapter 7.18. An Ontology-Based P2P Network for Semantic Search
+     - [ ] Chapter 7.19. Modeling a Multi-Agents System as a Network: A Metaphoric Exploration of the Unexpected
+   - Section: VIII Emerging Trends
+     - [ ] Chapter 8.7. A Novel Secure Video Surveillance System Over Wireless Ad Hoc Networks
+     - [ ] Chapter 8.11. Integrating Sensor Nodes into a Middleware for Ambient Intelligence
+     - [ ] Chapter 8.12. Buffer Control Techniques for QoS Provisioning in Wireless Networks
+
+** Software Design and Development
+   http://search.safaribooksonline.com/book/software-engineering-and-development/9781466643017
+   - Section 1: Fundamental Concepts and Theories
+     - [ ] Chapter 10: Model-Driven Engineering, Services and Interactive Real-Time Applications
+   1- Section 2: Development and Design Methodologies
+     - [ ] Chapter 13: Model-Driven Development of Mobile Information Systems
+     - [ ] Chapter 15: A Middleware Architecture for Developing Mobile Applications
+     - [ ] Chapter 21: Data Mining Techniques for Software Quality Prediction
+   - Section 3: Tools and Technologies
+     - [ ] Chapter 28: Integrating DSLs into a Software Engineering Process
+     - [ ] Chapter 29: DSLs in Action with Model Based Approaches to Information System Development
+     - [ ] Chapter 43: Extracting Social Relationships from Social Software
+     - [ ] Chapter 58: Modular Game Engine Design
+     - [ ] Chapter 72: A Game Theoretic Solution for the Optimal Selection of Services
+     - [ ] Chapter 87: How Much Automation can be done in Testing?
+     - [ ] Chapter 98: Evaluating the Usability of Domain-Specific Languages
+
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+
+

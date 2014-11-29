@@ -1,0 +1,105 @@
+
+#+TITLE: Android platform 
+#+CATEGORY: android
+#+BEGIN: columnview :hlines 1 :id global
+#+END:
+
+* games
+** Sudocu game with OpenCV and greedy solver
+
+** TODO 10+ Fun Phone Texting Games To Play With Your Friends
+   http://www.makeuseof.com/tag/10-fun-phone-texting-games-play-friends/%?
+   tic-tac-toe
+   hangman
+* p2p client
+** Single page apps in depth (a.k.a. Mixu' single page app book)       :DOCS:
+                                                                     CLOCK: [2013-08-05 Mon 17:16]--[2013-08-05 Mon 17:16] =>  0:00
+[2013-08-05 Mon 17:16]
+http://singlepageappbook.com/single-page.html
+
+
+* cm10
+** [ROM] CyanogenMod 10.1 Nightly Builds for NookColor [5/3/13] - xda-developers :DOCS:
+   http://forum.xda-developers.com/showthread.php?t=2132299
+
+** TODO CM10.2 Jellybean (Android 4.3) for Nook Tablet (IMG/SDC Boot) (22AUG2013) :DOCS:
+
+   http://iamafanof.wordpress.com/2013/08/10/cm10-2-jellybean-android-4-3-for-nook-tablet-imgsdc-boot-09aug2013/
+   http://forum.xda-developers.com/showthread.php?t=2388520
+
+
+* buildbot
+** DONE create test branch in streamCI
+   CLOSED: [2014-08-13 Wed 20:30]
+** extension framework
+*** DONE Database [4/4]
+    CLOSED: [2014-08-13 Wed 20:30]
+    - [X] Schema http://windyroad.com.au/dl/Open%20Source/JUnit.xsd 
+    - [X] Tool – XML spy – already on Lincase
+    - [X] Check UT format
+    - [X] XML ORM Python lib – lxml, myodbc; 
+
+*** Refresh django
+**** TODO Two Scoops of Django: Best Practices for Django 1.6.
+***** repo at: https://github.com/twoscoops/django-twoscoops-project/tree/develop
+***** REST and AngularJS
+      http://blog.kevinastone.com/getting-started-with-django-rest-framework-and-angularjs.html
+**** Book Content [1/31]
+     - [X] Chapter 1: Coding Conventions
+     - [ ] Chapter 2: The Optimal Django Environment Setup
+     - [ ] Chapter 3: How to Lay Out Django Projects
+     - [ ] Chapter 4: Fundamentals of Django App Design
+     - [ ] Chapter 5: Settings and Requirements Files
+     - [ ] Chapter 6: Database/Model Best Practices
+     - [ ] Chapter 7: Function- and Class-Based Views
+     - [ ] Chapter 8: Best Practices for Function-Based Views
+     - [ ] Chapter 8: Best Practices for Class-Based Views
+     - [ ] Chapter 10: Common Patterns for Forms
+     - [ ] Chapter 11: More Things to Know About Forms
+     - [ ] Chapter 12: Templates: Best Practices
+     - [ ] Chapter 13: Template Tags and Filters
+     - [ ] Chapter 14: Building REST APIs in Django
+     - [ ] Chapter 15: Consuming REST APIs in Templates
+     - [ ] Chapter 16: Tradeoffs of Replacing Core Components
+     - [ ] Chapter 17: Working With the Django Admin
+     - [ ] Chapter 18: Dealing with the User Model
+     - [ ] Chapter 19: Django's Secret Sauce: Third-Party Packages
+     - [ ] Chapter 20: Testing Chapter of Doom!
+     - [ ] Chapter 21: Documentation: Be Obsessed
+     - [ ] Chapter 22: Finding and Reducing Bottlenecks
+     - [ ] Chapter 23: Security Best Practices
+     - [ ] Chapter 24: Logging: What's It For, Anyway?
+     - [ ] Chapter 25: Signals: Use Cases and Avoidance Techniques
+     - [ ] Chapter 26: What About Those Random Utilities?
+     - [ ] Chapter 27: Deployment: Platforms as a Service
+     - [ ] Chapter 28: Deploying Django Projects
+     - [ ] Chapter 29: Identical Environments: The Holy Grail
+     - [ ] Chapter 30: Continuous Integration
+     - [ ] Chapter 31: How To Release Your Own Django Packages
+
+*** Frontend – Lucia
+    - Analiza statistici Jenkins – UT
+    - Single page design
+*** Deployment - Vlad
+    - Python modules & dependencies
+    - Db config environment connect string
+    - Step build master
+
+
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+

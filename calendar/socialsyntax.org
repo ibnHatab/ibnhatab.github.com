@@ -1,0 +1,111 @@
+
+#+TITLE: Social SYNTAX  
+#+CATEGORY: web
+
+
+* DevOps gears
+  http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of
+
+  - Keep it very simple
+  - Don’t re-invent the wheel
+  - Go with proven and solid technologies when you can
+
+** OS / Hosting
+*** AWS Free Usage Tier
+    http://aws.amazon.com/free/ - http://aws.amazon.com/free/faqs/
+    - Ubuntu Linux 11.04 (“Natty Narwhal”) on Amazon EC2
+
+*** OPENSHIFT (Deploy able from  from C9)
+    https://openshift.redhat.com/app/console/application/52f20a655973cae1970002f3-socialsyntax
+**** Code access
+     : git clone ssh://52f20a655973cae1970002f3@socialsyntax-wonderseecker.rhcloud.com/~/git/socialsyntax.git/
+     : cd socialsyntax/
+            
+*** Microsoft BizSpark
+    https://news.ycombinator.com/item?id=7164845
+
+
+** Load Balancing
+   - Amazon’s Elastic Load Balancer, with 3 NGINX instances
+   - Terminate our SSL at the ELB
+
+** DNS
+   - Domain Name: SOCIALSYNTAX.COM 
+     Registrar URL: http://www.godaddy.com 
+     Registrant Name: Kim Zavala 
+
+   - Domain Name: SOCIALSYNTAX.COM 
+     Status: FREE
+
+   - Use Amazon’s Route53 for DNS
+
+** Application Servers
+   - Run Django on Amazon machines (luckily, this is one area that’s easy to horizontally scale as they are stateless)
+   - Use http://gunicorn.org/ as our WSGI server
+   - For deploying code, use Fabric with parallel mode
+
+
+** Data storage
+   - Amazon RDS Single-AZ Micro DB Instances running MySQL
+   - Amazon SimpleDB Machine
+   - RIAK for NoSQL data
+   - Use Memcached for caching and connect to using pylibmc & libmemcached (Elastic Cache as alternative)
+
+** Monitoring
+   - use Munin building on top of Python-Munin
+   - Pingdom for external monitoring
+   - Python error reporting, we use Sentry, an awesome open-source Django
+
+* C9 codding and deployment platform
+  https://c9.io/ibnhatab/socialsyntax
+
+*** MySql
+    Root User: ibnhatab
+    Database Name: c9
+
+    : mysql-ctl start
+    : mysql-ctl status
+    : mysql-ctl cli
+
+    OK
+
+*** Here are some steps to get you started:
+
+    1) Use your terminal to install and start MySQL:
+      : mysql-ctl start
+
+    2) Run syncdb command to sync models to database and create Django's default superuser and auth system
+      : python manage.py syncdb
+
+    3) Optionally, install pip if you need it for installing any other python modules:
+      : curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+
+    4) Run Django
+      : python manage.py runserver $IP:$PORT
+
+    5) It worked!
+       https://socialsyntax-c9-ibnhatab.c9.io/
+
+
+
+** GITHUB socialsyntax organization
+   https://github.com/orgs/socialsyntax/dashboard
+   - usefull to organize collaboration
+*** 
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+

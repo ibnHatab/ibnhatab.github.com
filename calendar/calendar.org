@@ -1,0 +1,36 @@
+
+#+TITLE: Periodic events
+#+CATEGORY: cal
+
+* Meeting
+  - icebreakers-wls-ro@list.alcatel-lucent.com; lte-icebreaking-usa@LIST.ALCATEL-LUCENT.COM; LTE-ICEBREAKING-SH@LIST.ALCATEL-LUCENT.COM; lte-fft-cn@list.alcatel-lucent.com
+** MEETING Weekly meeting with IB boss
+   , <%%(and (= 3 (calendar-day-of-week date)) (diary-block 3 23 2012 6 23 2014)))>
+
+* Phone-call
+** MEETING with adrian.sharman@alcatel-lucent.com                   :MEETING:
+   CLOCK: [2013-08-06 Tue 13:30]--[2013-08-05 Mon 17:52] => -20:22
+   <2013-08-06 Tue 13:30>
+   When: 06 August 2013 11:30-12:00 (GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London.
+   Where: 2801 2801 pin 3883155#
+   Change to Tue this week as I am OOO Wed
+
+
+* org-config
+#+STARTUP: content hidestars
+#+TAGS: MEETING(m) PHONE(p) ANNIVERSARY(a) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+  

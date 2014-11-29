@@ -1,0 +1,49 @@
+
+#+TITLE: Refill Jornal For Actionable Tasks
+#+CATEGORY: cal
+
+* Meeting
+* Refill 
+** Espresso UI Testing is worth 4 Android 
+** Eclipse GMF: a graphical editor for EMF models
+   http://www.rcp-vision.com/?p=1476&lang=en
+** Scalaz State Monad
+  http://www.youtube.com/watch?v=Jg3Uv_YWJqI
+  [[file:/local/vlad/repos/ReactiveProgramming/nodescala/src/main/scala/nodescala/package.scala::}]]
+** Archive                                                          :ARCHIVE:
+*** install CW 11 on NOOK                                           :ARCHIVE:
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2014-08-11 Mon 12:48
+    :END:
+    http://forum.xda-developers.com/showthread.php?t=2568105
+* Notes
+** Taking embedded robotics to the next level                                                                  :DOCS:
+                                                                     CLOCK: [2013-09-04 Wed 09:55]--[2013-09-04 Wed 09:55] =>  0:00
+[2013-09-04 Wed 09:55]
+http://www.embedded.com/electronics-blogs/other/4420446/Taking-embedded-robotics-to-the-next-level
+** VoLTE                                                               :DOCS:
+  [2013-10-18 Fri 10:03]
+  https://wcdma-ll.app.alcatel-lucent.com/livelink/livelink.exe?func=ll&objId=66954366&objAction=browse&sort=name
+** SoErlang, Wprowadzenie do Openflow Soft Switch - Konrad Kaplita                                                                  :DOCS:
+  [2013-11-27 Wed 18:25]
+  
+  http://soerlang.tumblr.com/post/25505186388/wprowadzenie-do-openflow-soft-switch-konrad-kaplita
+* Idea
+
+* org-config                                                        :ARCHIVE:
+#+STARTUP: content hidestars
+#+TAGS: DOCS(d) CODING(c) TESTING(t) PLANING(p)
+#+LINK_UP: sitemap.html
+#+LINK_HOME: main.html
+#+COMMENT: toc:nil
+#+OPTIONS: ^:nil
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+DESCRIPTION: Augment design process with system property discovering aid.
+#+KEYWORDS: SmallCell,
+#+LANGUAGE: en
+#+PROPERTY: Effort_ALL  1:00 2:00 4:00 6:00 8:00 12:00
+#+COLUMNS: %52ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-manual.css" />
+
